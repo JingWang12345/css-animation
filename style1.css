@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container {
+    width: 200px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader-track {
+    position: absolute;
+    background-color: crimson;
+    border-radius: 10px;
+    width: 0px;
+    height: 10px;
+    top: 0;
+    left: 0;
+
+    /* animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+  }
+ 
+
+.fill{
+    animation: loading 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

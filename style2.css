@@ -1,0 +1,74 @@
+html,body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.bar {
+    height: 5px;
+    width: 12px;
+    animation: change-height 0.45s infinite alternate;
+}
+
+.red {
+    background-color: #e50000;
+    box-shadow: 1px 1px 10px 5px #e50000;
+    animation-delay: 0.1s;
+}
+
+.orange {
+    background-color: chocolate;
+    box-shadow: 1px 1px 10px chocolate;
+    animation-delay: 0.2s;
+}
+
+.yellow {
+    background-color: #FFEE00;
+    box-shadow: 1px 1px 10px #FFEE00;
+    animation-delay: 0.2s;
+}
+
+.green {
+    background-color: #008121;
+    box-shadow: 1px 1px 10px #008121;
+    animation-delay: 0.3s;
+
+}
+
+.blue {
+    background-color: blue;
+    box-shadow: 1px 1px 10px blue;
+    animation-delay: 0.35s;
+}
+
+.violet {
+    background-color: #760199;
+    box-shadow: 1px 1px 10px #760199;
+    animation-delay: 0.4s;
+}
+
+@keyframes change-height {
+    from {
+        height: 5px;
+    }
+
+    to {
+        height: 40px;
+    }
+}
